@@ -1,0 +1,31 @@
+/* Resetting some default styles */
+body, ul, li, a, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Basic body style */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2a73cc;
+    position: relative;
+    min-height: 100vh;
+    font-size: 16px;
+    overflow-x: hidden;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Style for the particles background */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #2a73cc;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}

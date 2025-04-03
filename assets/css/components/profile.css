@@ -1,0 +1,192 @@
+/* Profile container styling */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+    border: 4px solid white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic:hover {
+    transform: scale(1.05) rotate(5deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.profile-container h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+    font-weight: 700;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile-container p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    max-width: 600px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* YouTube icon styling */
+.youtube-icon {
+    margin: 15px 0;
+}
+
+.youtube-icon a {
+    color: white;
+    font-size: 40px;
+    transition: all 0.3s ease;
+}
+
+.youtube-icon a:hover {
+    color: #ff0000;
+    transform: scale(1.1);
+}
+
+/* Social icons styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icons a:hover {
+    transform: scale(1.2) translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button container styling */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+    gap: 15px;
+}
+
+.custom-button {
+    background-color: #042247;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    min-width: 180px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-button:hover {
+    background-color: #738192;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Profile */
+@media (max-width: 992px) {
+    .profile-container {
+        margin-top: 80px;
+    }
+    
+    .profile-pic {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        margin-top: 70px;
+    }
+    
+    .profile-pic {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .profile-container h1 {
+        font-size: 2em;
+    }
+    
+    .profile-container p {
+        font-size: 1.1em;
+    }
+    
+    .social-icons a {
+        font-size: 22px;
+        margin: 0 12px;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .custom-button {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-container {
+        margin-top: 60px;
+    }
+    
+    .profile-pic {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .profile-container h1 {
+        font-size: 1.8em;
+    }
+    
+    .profile-container p {
+        font-size: 1em;
+    }
+    
+    .social-icons a {
+        font-size: 20px;
+        margin: 0 8px;
+        width: 40px;
+        height: 40px;
+    }
+}

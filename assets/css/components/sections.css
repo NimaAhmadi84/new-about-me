@@ -1,0 +1,164 @@
+/* Container for resume section */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.profile h1 {
+    font-size: 2.2em;
+    color: #2a73cc;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.profile p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+/* Resume button styling */
+.resume-button {
+    background-color: #2a73cc;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resume-button:hover {
+    background-color: #1a5bb5;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styles */
+.about-me, .why-me, .education, .vision, .contact {
+    margin: 30px 0;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border-left: 4px solid #2a73cc;
+}
+
+.about-me h2, .why-me h2, .education h2, .vision h2, .contact h2 {
+    color: #2a73cc;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.about-me h2::after, .why-me h2::after, .education h2::after, 
+.vision h2::after, .contact h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #2a73cc;
+}
+
+.why-me ul {
+    padding-left: 20px;
+}
+
+.why-me li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 25px;
+}
+
+.why-me li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #2a73cc;
+    font-weight: bold;
+}
+
+.education p {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.education p::before {
+    content: '•';
+    position: absolute;
+    left: 5px;
+    color: #2a73cc;
+    font-size: 1.5em;
+    line-height: 0;
+}
+
+.quote {
+    text-align: center;
+    font-style: italic;
+    margin-top: 40px;
+    color: #555;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    font-size: 1.1em;
+    position: relative;
+}
+
+.quote::before {
+    content: '"';
+    font-size: 3em;
+    color: #2a73cc;
+    opacity: 0.2;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Responsive Sections */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .about-me, .why-me, .education, .vision, .contact {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .profile h1 {
+        font-size: 1.8em;
+    }
+    
+    .about-me h2, .why-me h2, .education h2, .vision h2, .contact h2 {
+        font-size: 1.3em;
+    }
+    
+    .resume-button {
+        width: 100%;
+        padding: 12px;
+    }
+}

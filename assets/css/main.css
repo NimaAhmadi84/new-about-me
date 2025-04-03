@@ -1,0 +1,13 @@
+/* Base Styles */
+@import url('components/utilities.css');
+
+/* Components */
+@import url('components/navbar.css');
+@import url('components/profile.css');
+@import url('components/sections.css');
+@import url('components/skills.css');
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    /* Media queries will be in respective component files */
+}
