@@ -1,0 +1,30 @@
+about-me/
+├── index.html
+├── assets/
+│   ├── css/
+│   │   ├── main.css
+│   │   └── components/
+│   │       ├── navbar.css
+│   │       ├── profile.css
+│   │       ├── sections.css
+│   │       ├── skills.css
+│   │       └── utilities.css
+│   ├── js/
+│   │   ├── main.js
+│   │   └── modules/
+│   │       ├── particles-config.js
+│   │       ├── navbar.js
+│   │       ├── profile.js
+│   │       ├── skills.js
+│   │       └── utils.js
+│   └── images/
+│       └── profile.jpg
+└── sections/
+    ├── navbar.html
+    ├── profile.html
+    ├── about.html
+    ├── skills.html
+    ├── why-me.html
+    ├── education.html
+    ├── vision.html
+    └── contact.html
